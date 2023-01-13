@@ -1,0 +1,70 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 75px;
+  background-color: #0e3655;
+}
+header .header-social-media ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+header .header-social-media li {
+  float: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .header-social-media li a {
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+  padding: 15px 20px;
+  text-align: center;
+  color: #cdcdcd;
+}
+header .header-social-media li a:hover {
+  background-color: #cdcdcd;
+  color: #0e3655;
+}
+header .header-contact-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-contact-section a {
+  transition: color 0.3s;
+  color: #fff;
+}
+header .header-contact-section a:hover {
+  color: #43ca83;
+}
+header .header-contact-section i {
+  margin-right: 5px;
+  color: #43ca83;
+}
+header .header-contact-section .header-contact-item {
+  margin-left: 75px;
+}/*# sourceMappingURL=main.css.map */

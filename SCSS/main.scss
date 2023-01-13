@@ -1,0 +1,82 @@
+@import 'colors';
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	position: relative;
+	font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 75px;
+	background-color: $navy;
+	.header-social-media {
+		ul {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			list-style: none;
+		}
+
+		li {
+			float: left;
+			border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+			a {
+				transition: background-color 0.3s, color 0.3s;
+				display: block;
+				padding: 15px 20px;
+				text-align: center;
+				color: $grey;
+			}
+
+			a:hover {
+				background-color: $grey;
+				color: $navy;
+			}
+		}
+	}
+
+	.header-contact-section {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+
+		a {
+			transition: color 0.3s;
+			color: $white;
+		}
+
+		a:hover {
+			color: $green;
+		}
+
+		i {
+			margin-right: 5px;
+			color: $green;
+		}
+
+		.header-contact-item {
+			margin-left: 75px;
+		}
+	}
+}
