@@ -27,11 +27,11 @@ button {
 }
 button a {
   display: block;
-  padding: 15px 30px;
+  padding: 15px 40px;
   font-weight: bold;
 }
 button a i {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .btn-red {
@@ -47,11 +47,17 @@ button a i {
 .btn-white {
   transition: background-color 0.3s;
   background-color: #fff;
+}
+.btn-white a {
   color: #0e3655;
+  transition: color 0.3s;
 }
 
 .btn-white:hover {
   background-color: #ea6c56;
+}
+.btn-white:hover a {
+  color: #fff;
 }
 
 header {
@@ -137,11 +143,27 @@ nav button a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 50px 400px 50px;
+  padding: 75px 50px 315px;
   background-image: url("../img/Hero_image.jpg");
   text-align: center;
 }
 .hero-section h1 {
-  color: #fff;
   margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+.hero-section button {
+  position: relative;
+}
+.hero-section button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 108%;
+  height: 130%;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */

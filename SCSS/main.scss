@@ -29,10 +29,10 @@ button {
 	text-transform: uppercase;
 	a {
 		display: block;
-		padding: 15px 30px;
-		font-weight: bold;
+		padding: 15px 40px;		font-weight: bold;
+
 		i {
-			margin-right: 10px;
+			margin-right: 15px;		
 		}
 	}
 }
@@ -48,10 +48,17 @@ button {
 .btn-white {
 	transition: background-color 0.3s;
 	background-color: $white;
-	color: $navy;
+
+	a {
+		color: $navy;
+		transition: color 0.3s;
+	}
 }
 .btn-white:hover {
 	background-color: $red-tomato;
+	a {
+		color: #fff;
+	}
 }
 // Styles of header
 header {
@@ -158,12 +165,28 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 100px 50px 400px 50px;
+	padding: 75px 50px 315px;
 	background-image: url('../img/Hero_image.jpg');
 	text-align: center;
 
 	h1 {
-		color: $white;
 		margin-bottom: 50px;
+		font-weight: bold;
+		font-size: 3.5rem;
+		color: $white;
+		text-shadow: 0 3px rgba(#000000, 0.2);
+	}
+	button {
+		position: relative;
+	}
+	button::after {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		width: 108%;
+		height: 130%;
+		border: 10px solid rgba(#000000, 0.2);
+		border-radius: 15px;
 	}
 }
