@@ -30,7 +30,6 @@ header {
 header .header-social-media ul {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   list-style: none;
 }
 header .header-social-media li {
@@ -67,4 +66,31 @@ header .header-contact-section i {
 }
 header .header-contact-section .header-contact-item {
   margin-left: 75px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 75px;
+  background-color: #fff;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+nav ul li a {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav button {
+  padding: 5px 10px;
+  background-color: tomato;
+  color: #fff;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

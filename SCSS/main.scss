@@ -21,7 +21,7 @@ body {
 a {
 	text-decoration: none;
 }
-
+// Styles of header
 header {
 	display: flex;
 	flex-flow: row wrap;
@@ -33,7 +33,6 @@ header {
 		ul {
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
 			list-style: none;
 		}
 
@@ -78,5 +77,39 @@ header {
 		.header-contact-item {
 			margin-left: 75px;
 		}
+	}
+}
+
+// STYLES OF NAVIGATION
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 75px;
+	background-color: $white;
+
+	ul {
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+
+		li {
+			a {
+				padding: 10px 15px;
+				font-size: 1.2rem;
+				color: black;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+
+	button {
+		padding: 5px 10px;
+		background-color: tomato;
+		color: $white;
+		text-transform: uppercase;
 	}
 }
