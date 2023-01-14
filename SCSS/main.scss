@@ -21,6 +21,38 @@ body {
 a {
 	text-decoration: none;
 }
+
+button {
+	box-shadow: inset 0 -5px 0 0 rgba(#000000, 0.2);
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	a {
+		display: block;
+		padding: 15px 30px;
+		font-weight: bold;
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+.btn-red {
+	transition: background-color 0.3s;
+	background-color: $red-tomato;
+	color: $white;
+}
+.btn-red:hover {
+	background-color: $green;
+}
+
+.btn-white {
+	transition: background-color 0.3s;
+	background-color: $white;
+	color: $navy;
+}
+.btn-white:hover {
+	background-color: $red-tomato;
+}
 // Styles of header
 header {
 	display: flex;
@@ -86,7 +118,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 75px;
+	padding: 25px 75px;
 	background-color: $white;
 
 	ul {
@@ -96,20 +128,42 @@ nav {
 
 		li {
 			a {
-				padding: 10px 15px;
-				font-size: 1.2rem;
-				color: black;
+				margin: 0 15px;
+				transition: color 0.3s;
+				color: $dark-grey;
 				text-transform: uppercase;
 				font-weight: bold;
-				text-decoration: none;
+			}
+
+			a:hover {
+				color: $red-tomato;
+			}
+
+			i {
+				margin-left: 30px;
 			}
 		}
 	}
 
 	button {
-		padding: 5px 10px;
-		background-color: tomato;
+		a {
+			padding: 10px 20px;
+			font-size: 0.8rem;
+		}
+	}
+}
+
+// STYLES HERO-SECTION
+.hero-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 50px 400px 50px;
+	background-image: url('../img/Hero_image.jpg');
+	text-align: center;
+
+	h1 {
 		color: $white;
-		text-transform: uppercase;
+		margin-bottom: 50px;
 	}
 }
