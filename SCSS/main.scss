@@ -17,6 +17,7 @@ body {
 	font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
 		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
 }
+
 // STYLES OF BASIC TAGS
 h1 {
 	margin-bottom: 50px;
@@ -25,7 +26,12 @@ h1 {
 	color: $white;
 	text-shadow: 0 3px rgba(#000000, 0.2);
 }
-
+h2 {
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 2.5rem;
+	color: $white;
+}
 h3 {
 	font-size: 1.5rem;
 	color: $red-tomato;
@@ -54,6 +60,10 @@ button {
 	transition: background-color 0.3s;
 	background-color: $red-tomato;
 	color: $white;
+
+	a {
+		color: $white;
+	}
 }
 .btn-red:hover {
 	background-color: $green;
@@ -173,13 +183,12 @@ nav {
 		}
 	}
 }
-
 // STYLES HERO-SECTION
 .hero-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 75px 50px 315px;
+	padding: 75px 50px 305px;
 	background-image: url('../img/Hero_image.jpg');
 	text-align: center;
 
@@ -202,11 +211,13 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: space-around;
-	padding: 75px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
 
 	.know-how-card {
 		flex: 1;
-		padding: 20px 50px;
+		padding: 0 20px;
 		margin: 0 20px;
 		text-align: center;
 
@@ -244,6 +255,37 @@ nav {
 
 		.know-how-text {
 			color: #7f7fb1;
+		}
+	}
+}
+// STYLES OF PROMOTE YOUR BRAND SECTION
+.promote-your-brand-section {
+	background-image: url('/img/image_rocket.jpg');
+	background-position: center;
+	padding: 120px 50px 120px;
+
+	.promote-your-brand-content {
+		max-width: 550px;
+		margin-left: 100px;
+
+		p {
+			color: $light-grey;
+		}
+
+		q {
+			position: relative;
+			display: block;
+			padding: 30px 0 40px 90px;
+			quotes: none;
+			color: $white;
+			font-weight: bold;
+			font-size: 1.5rem;
+		}
+
+		q::before {
+			position: absolute;
+			font-family: 'FontAwesome';
+			content: '\f10d'; /*quote left icon*/
 		}
 	}
 }

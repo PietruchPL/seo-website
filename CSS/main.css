@@ -23,6 +23,13 @@ h1 {
   text-shadow: 0 3px rgba(0, 0, 0, 0.2);
 }
 
+h2 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 h3 {
   font-size: 1.5rem;
   color: #ea6c56;
@@ -51,6 +58,9 @@ button a i {
 .btn-red {
   transition: background-color 0.3s;
   background-color: #ea6c56;
+  color: #fff;
+}
+.btn-red a {
   color: #fff;
 }
 
@@ -157,7 +167,7 @@ nav button a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 75px 50px 315px;
+  padding: 75px 50px 305px;
   background-image: url("../img/Hero_image.jpg");
   text-align: center;
 }
@@ -179,11 +189,13 @@ nav button a {
   display: flex;
   justify-content: center;
   align-items: space-around;
-  padding: 75px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 .know-how-section .know-how-card {
   flex: 1;
-  padding: 20px 50px;
+  padding: 0 20px;
   margin: 0 20px;
   text-align: center;
 }
@@ -217,4 +229,31 @@ nav button a {
 }
 .know-how-section .know-how-card .know-how-text {
   color: #7f7fb1;
+}
+
+.promote-your-brand-section {
+  background-image: url("/img/image_rocket.jpg");
+  background-position: center;
+  padding: 120px 50px 120px;
+}
+.promote-your-brand-section .promote-your-brand-content {
+  max-width: 550px;
+  margin-left: 100px;
+}
+.promote-your-brand-section .promote-your-brand-content p {
+  color: #e4e4e4;
+}
+.promote-your-brand-section .promote-your-brand-content q {
+  position: relative;
+  display: block;
+  padding: 30px 0 40px 90px;
+  quotes: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.promote-your-brand-section .promote-your-brand-content q::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f10d"; /*quote left icon*/
 }/*# sourceMappingURL=main.css.map */
