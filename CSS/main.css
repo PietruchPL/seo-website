@@ -26,8 +26,19 @@ h1 {
 h2 {
   margin-bottom: 50px;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   color: #fff;
+}
+
+h2::after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: -20px;
+  left: 0;
+  height: 4px;
+  width: 70px;
+  background-color: #43ca83;
 }
 
 h3 {
@@ -187,16 +198,17 @@ nav button a {
 
 .know-how-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: space-around;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 60px;
 }
 .know-how-section .know-how-card {
   flex: 1;
-  padding: 0 20px;
-  margin: 0 20px;
+  padding: 0 40px 50px;
+  min-width: 250px;
   text-align: center;
 }
 .know-how-section .know-how-card .know-how-header {
@@ -232,28 +244,44 @@ nav button a {
 }
 
 .promote-your-brand-section {
+  padding: 120px 50px 120px;
   background-image: url("/img/image_rocket.jpg");
   background-position: center;
-  padding: 120px 50px 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.promote-your-brand-section .promote-your-brand-content {
+.promote-your-brand-section .promote-your-brand-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.promote-your-brand-section .promote-your-brand-container .promote-your-brand-content {
   max-width: 550px;
   margin-left: 100px;
 }
-.promote-your-brand-section .promote-your-brand-content p {
+.promote-your-brand-section .promote-your-brand-container .promote-your-brand-content h2 {
+  position: relative;
+  line-height: 1.1;
+}
+.promote-your-brand-section .promote-your-brand-container .promote-your-brand-content p {
   color: #e4e4e4;
 }
-.promote-your-brand-section .promote-your-brand-content q {
+.promote-your-brand-section .promote-your-brand-container .promote-your-brand-content q {
   position: relative;
   display: block;
-  padding: 30px 0 40px 90px;
+  margin: 30px 0 40px 90px;
   quotes: none;
   color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.promote-your-brand-section .promote-your-brand-content q::before {
+.promote-your-brand-section .promote-your-brand-container .promote-your-brand-content q::before {
   position: absolute;
+  top: 0;
+  left: -40px;
   font-family: "FontAwesome";
   content: "\f10d"; /*quote left icon*/
+  font-size: 2.2rem;
+  color: #fdc00f;
 }/*# sourceMappingURL=main.css.map */
