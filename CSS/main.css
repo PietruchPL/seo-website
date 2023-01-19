@@ -49,6 +49,7 @@ h3 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
@@ -184,11 +185,12 @@ nav button a {
 }
 .hero-section button {
   position: relative;
+  cursor: pointer;
 }
 .hero-section button::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: -10px;
   width: 108%;
   height: 130%;
