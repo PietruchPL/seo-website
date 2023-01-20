@@ -27,10 +27,11 @@ h1 {
 	text-shadow: 0 3px rgba(#000000, 0.2);
 }
 h2 {
+	position: relative;
 	margin-bottom: 50px;
 	font-weight: bold;
 	font-size: 2.4rem;
-	color: $white;
+	color: $dark-grey;
 }
 
 h2::after {
@@ -44,10 +45,23 @@ h2::after {
 	background-color: $green;
 }
 
+.h2-center::after {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 h3 {
 	font-size: 1.5rem;
 	color: $red-tomato;
 	font-weight: bold;
+}
+hr {
+	display: block;
+	width: 30px;
+	height: 5px;
+	margin: 15px auto 0;
+	background-color: $light-grey;
+	border: none;
 }
 a {
 	text-decoration: none;
@@ -196,13 +210,19 @@ nav {
 		}
 	}
 }
+
+section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 // STYLES HERO-SECTION
 .hero-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 75px 50px 305px;
+	padding-bottom: 326px;
 	background-image: url('../img/Hero_image.jpg');
+	background-size: cover;
 	text-align: center;
 
 	button {
@@ -228,12 +248,10 @@ nav {
 	align-items: space-around;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 0 60px;
 
 	.know-how-card {
-		flex: 1;
-		padding: 0 40px 50px;
-		min-width: 250px;
+		flex: 1 1 300px;
+		padding: 25px 40px 25px;
 		text-align: center;
 
 		.know-how-header {
@@ -257,15 +275,6 @@ nav {
 			.fa-share-nodes {
 				background-color: $light-blue;
 			}
-
-			hr {
-				display: inline-block;
-				width: 30px;
-				height: 5px;
-				margin-top: 15px;
-				background-color: $light-grey;
-				border: none;
-			}
 		}
 
 		.know-how-text {
@@ -275,7 +284,6 @@ nav {
 }
 // STYLES OF PROMOTE YOUR BRAND SECTION
 .promote-your-brand-section {
-	padding: 120px 50px 120px;
 	background-image: url('/img/image_rocket.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -291,6 +299,7 @@ nav {
 			margin-left: 100px;
 			h2 {
 				position: relative;
+				color: $white;
 				line-height: 1.1;
 			}
 
@@ -316,6 +325,55 @@ nav {
 				content: '\f10d'; /*quote left icon*/
 				font-size: 2.2rem;
 				color: $gold;
+			}
+		}
+	}
+}
+// STYLES OF WHY PEOPLE CHOOSE US
+.why-people-choose-us-section {
+	margin: 0 auto;
+	text-align: center;
+	.why-people-choose-us-card-container {
+		display: flex;
+		max-width: 1200px;
+		margin: 0 auto;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+
+		.why-people-choose-us-card {
+			flex: 1 0 240px;
+			padding: 30px 20px;
+
+			i,
+			h3 {
+				font-size: 2.5rem;
+			}
+			.fa-user-group {
+				color: $gold;
+			}
+			.fa-chart-line {
+				color: $red-tomato;
+			}
+			.fa-chalkboard {
+				color: $green;
+			}
+			.fa-circle-check {
+				color: $light-blue;
+			}
+			h3 {
+				margin-top: 10px;
+				color: $dark-grey;
+			}
+
+			p {
+				font-size: 1.3rem;
+				color: #7f7f7f;
+				font-weight: bold;
+			}
+
+			hr {
+				margin: 5px auto;
 			}
 		}
 	}

@@ -24,10 +24,11 @@ h1 {
 }
 
 h2 {
+  position: relative;
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 2.4rem;
-  color: #fff;
+  color: #424343;
 }
 
 h2::after {
@@ -41,10 +42,24 @@ h2::after {
   background-color: #43ca83;
 }
 
+.h2-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 h3 {
   font-size: 1.5rem;
   color: #ea6c56;
   font-weight: bold;
+}
+
+hr {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 15px auto 0;
+  background-color: #e4e4e4;
+  border: none;
 }
 
 a {
@@ -175,12 +190,18 @@ nav button a {
   font-size: 0.8rem;
 }
 
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 75px 50px 305px;
+  padding-bottom: 326px;
   background-image: url("../img/Hero_image.jpg");
+  background-size: cover;
   text-align: center;
 }
 .hero-section button {
@@ -205,12 +226,10 @@ nav button a {
   align-items: space-around;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0 60px;
 }
 .know-how-section .know-how-card {
-  flex: 1;
-  padding: 0 40px 50px;
-  min-width: 250px;
+  flex: 1 1 300px;
+  padding: 25px 40px 25px;
   text-align: center;
 }
 .know-how-section .know-how-card .know-how-header {
@@ -233,20 +252,11 @@ nav button a {
 .know-how-section .know-how-card .know-how-header .fa-share-nodes {
   background-color: #4bafd2;
 }
-.know-how-section .know-how-card .know-how-header hr {
-  display: inline-block;
-  width: 30px;
-  height: 5px;
-  margin-top: 15px;
-  background-color: #e4e4e4;
-  border: none;
-}
 .know-how-section .know-how-card .know-how-text {
   color: #7f7fb1;
 }
 
 .promote-your-brand-section {
-  padding: 120px 50px 120px;
   background-image: url("/img/image_rocket.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -264,6 +274,7 @@ nav button a {
 }
 .promote-your-brand-section .promote-your-brand-container .promote-your-brand-content h2 {
   position: relative;
+  color: #fff;
   line-height: 1.1;
 }
 .promote-your-brand-section .promote-your-brand-container .promote-your-brand-content p {
@@ -286,4 +297,49 @@ nav button a {
   content: "\f10d"; /*quote left icon*/
   font-size: 2.2rem;
   color: #fdc00f;
+}
+
+.why-people-choose-us-section {
+  margin: 0 auto;
+  text-align: center;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card {
+  flex: 1 0 240px;
+  padding: 30px 20px;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card i,
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card h3 {
+  font-size: 2.5rem;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card .fa-user-group {
+  color: #fdc00f;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card .fa-chart-line {
+  color: #ea6c56;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card .fa-chalkboard {
+  color: #43ca83;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card .fa-circle-check {
+  color: #4bafd2;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card h3 {
+  margin-top: 10px;
+  color: #424343;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card p {
+  font-size: 1.3rem;
+  color: #7f7f7f;
+  font-weight: bold;
+}
+.why-people-choose-us-section .why-people-choose-us-card-container .why-people-choose-us-card hr {
+  margin: 5px auto;
 }/*# sourceMappingURL=main.css.map */
