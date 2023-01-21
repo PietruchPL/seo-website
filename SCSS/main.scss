@@ -378,3 +378,40 @@ section {
 		}
 	}
 }
+//STYLES OF OUR TEAM SECTION
+.our-team-section {
+	background-color: #f7f8fb;
+	text-align: center;
+	.our-team-card-section {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		.our-team-card {
+			flex: 1 1 300px;
+			padding: 25px 40px 25px;
+			text-align: center;
+			p {
+				margin-top: 10px;
+				color: #7f7f7f;
+			}
+			.our-team-img {
+				img {
+					margin: 10px auto;
+					border-radius: 50%;
+					border: 10px solid #f7f8fb;
+					box-shadow: 0 7px rgba(#000000, 0.1);
+				}
+			}
+			.our-team-text {
+				p {
+					color: $dark-grey;
+				}
+			}
+		}
+	}
+	button {
+		margin-top: 20px;
+	}
+}
