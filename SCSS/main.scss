@@ -439,12 +439,13 @@ section {
 		font-weight: lighter;
 	}
 	.recent-cases-container {
+		max-width: 600px;
 		margin-left: 50vw;
-		margin-right: calc(100vw * 0.25);
+		margin-right: calc(100vw * 0.15);
 		.recent-cases-carousel {
 			position: relative;
 			.carousel-inner {
-				margin-left: 50px;
+				padding-left: 50px;
 			}
 			.carousel-indicators {
 				position: absolute;

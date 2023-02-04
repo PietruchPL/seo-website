@@ -398,14 +398,15 @@ section {
   font-weight: lighter;
 }
 .recent-cases-section .recent-cases-container {
+  max-width: 600px;
   margin-left: 50vw;
-  margin-right: 25vw;
+  margin-right: 15vw;
 }
 .recent-cases-section .recent-cases-container .recent-cases-carousel {
   position: relative;
 }
 .recent-cases-section .recent-cases-container .recent-cases-carousel .carousel-inner {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 .recent-cases-section .recent-cases-container .recent-cases-carousel .carousel-indicators {
   position: absolute;
