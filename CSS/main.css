@@ -53,6 +53,11 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 hr {
   display: block;
   width: 30px;
@@ -374,4 +379,65 @@ section {
 }
 .our-team-section button {
   margin-top: 20px;
+}
+
+.recent-cases-section {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background: url("../img/recent-cases-img.jpg");
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+.recent-cases-section h2,
+.recent-cases-section h3 {
+  color: #fff;
+}
+.recent-cases-section p {
+  color: #e4e4e4;
+  font-weight: lighter;
+}
+.recent-cases-section .recent-cases-container {
+  margin-left: 50vw;
+  margin-right: 25vw;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel {
+  position: relative;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .carousel-inner {
+  margin-left: 50px;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .carousel-indicators {
+  position: absolute;
+  right: auto;
+  bottom: -70px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border-radius: 50%;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .recent-sections-card .recent-cases-procentage-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .recent-sections-card .recent-cases-procentage-section .recent-cases-procentage {
+  display: flex;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .recent-sections-card .recent-cases-procentage-section .recent-cases-procentage h4 {
+  margin-bottom: 0;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .recent-sections-card .recent-cases-procentage-section .recent-cases-procentage .expenses {
+  margin-right: 50px;
+  color: #ea6c56;
+}
+.recent-cases-section .recent-cases-container .recent-cases-carousel .recent-sections-card .recent-cases-procentage-section .recent-cases-procentage .profit {
+  color: #43ca83;
 }/*# sourceMappingURL=main.css.map */

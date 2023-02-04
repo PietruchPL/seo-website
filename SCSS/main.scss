@@ -55,6 +55,10 @@ h3 {
 	color: $red-tomato;
 	font-weight: bold;
 }
+h4 {
+	font-weight: bold;
+	font-size: 1.8rem;
+}
 hr {
 	display: block;
 	width: 30px;
@@ -413,5 +417,73 @@ section {
 	}
 	button {
 		margin-top: 20px;
+	}
+}
+//STYLES OF RECENT CASES SECTION
+.recent-cases-section {
+	// position: relative;
+	padding-bottom: 200px;
+	padding-top: 200px;
+	background: url('../img/recent-cases-img.jpg');
+	background-size: cover;
+	background-position: bottom;
+	overflow: hidden;
+
+	h2,
+	h3 {
+		color: $white;
+	}
+
+	p {
+		color: $light-grey;
+		font-weight: lighter;
+	}
+	.recent-cases-container {
+		margin-left: 50vw;
+		margin-right: calc(100vw * 0.25);
+		.recent-cases-carousel {
+			position: relative;
+			.carousel-inner {
+				margin-left: 50px;
+			}
+			.carousel-indicators {
+				position: absolute;
+				right: auto;
+				bottom: -70px;
+				left: 0;
+				margin: 0;
+				padding: 0;
+
+				button {
+					width: 12px;
+					height: 12px;
+					margin-right: 7px;
+					margin-left: 7px;
+					border-radius: 50%;
+				}
+			}
+			.recent-sections-card {
+				.recent-cases-procentage-section {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-between;
+					align-items: center;
+
+					.recent-cases-procentage {
+						display: flex;
+						h4 {
+							margin-bottom: 0;
+						}
+						.expenses {
+							margin-right: 50px;
+							color: $red-tomato;
+						}
+						.profit {
+							color: $green;
+						}
+					}
+				}
+			}
+		}
 	}
 }
