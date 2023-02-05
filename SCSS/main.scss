@@ -426,7 +426,7 @@ section {
 	padding-top: 200px;
 	background: url('../img/recent-cases-img.jpg');
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	overflow: hidden;
 
 	h2,
@@ -441,7 +441,6 @@ section {
 	.recent-cases-container {
 		max-width: 600px;
 		margin-left: 50vw;
-		margin-right: calc(100vw * 0.15);
 		.recent-cases-carousel {
 			position: relative;
 			.carousel-inner {
@@ -464,6 +463,17 @@ section {
 				}
 			}
 			.recent-sections-card {
+				position: relative;
+				padding-top: 75px;
+				.shadow-number {
+					position: absolute;
+					top: 22px;
+					left: -53px;
+					font-size: 4rem;
+					font-weight: bold;
+					color: rgba(#fff, 0.2);
+				}
+
 				.recent-cases-procentage-section {
 					display: flex;
 					flex-flow: row wrap;
@@ -480,6 +490,7 @@ section {
 							color: $red-tomato;
 						}
 						.profit {
+							margin-right: 50px;
 							color: $green;
 						}
 					}
