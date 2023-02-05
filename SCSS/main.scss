@@ -464,12 +464,12 @@ section {
 			}
 			.recent-sections-card {
 				position: relative;
-				padding-top: 75px;
+				padding-top: 60px;
 				.shadow-number {
 					position: absolute;
-					top: 22px;
-					left: -53px;
-					font-size: 4rem;
+					top: 12px;
+					left: -52px;
+					font-size: 3.6rem;
 					font-weight: bold;
 					color: rgba(#fff, 0.2);
 				}
@@ -502,7 +502,6 @@ section {
 //STYLES OF TESTIMONIALS SECTION
 
 .testimonials-section {
-	background-color: #f7f8fb;
 	h2 {
 		text-align: center;
 	}
@@ -574,6 +573,30 @@ section {
 				margin-right: 20px;
 				border-radius: 50%;
 			}
+		}
+	}
+}
+//STYLES OF OUR CLIENTS SECTION
+.our-clients-section {
+	background-color: #f7f8fb;
+	text-align: center;
+
+	.our-clients-cards {
+		max-width: 1200px;
+		margin: 0 auto;
+
+		img {
+			width: 15vw;
+			max-width: 180px;
+			transition: filter 0.3s, transform 0.3s;
+			background-size: contain;
+			background-position: center;
+			margin: 0 20px;
+		}
+
+		img:hover {
+			color: $green;
+			filter: contrast(3);
 		}
 	}
 }
